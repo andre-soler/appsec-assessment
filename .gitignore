@@ -1,0 +1,12 @@
+# Saídas brutas: contêm tokens, cookies e dados de teste
+scans/*
+!scans/.gitkeep
+capturas/*
+!capturas/.gitkeep
+
+# Sessões do ZAP
+*.session
+*.session.*
+
+# Credenciais das contas de teste
+.env
