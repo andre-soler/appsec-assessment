@@ -1,0 +1,14 @@
+# Stored XSS test — Community posts
+
+**Endpoint:** `POST /community/api/v2/community/posts`
+**Date:** 2026-11-06
+
+## Test
+Submitted `<b>test</b>` in the post title and body.
+
+## Result
+Title: output encoded as `&lt;b&gt;test&lt;/b&gt;` — NOT vulnerable.
+Body: [complete after testing]
+
+## Conclusion
+Stored XSS not present in [title / both fields]. Input is HTML-encoded on output.
